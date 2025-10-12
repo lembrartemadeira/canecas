@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lembrarte Madeira</title>
+    <link rel="stylesheet" href="./styles/mainStyle.css">
+    <script src="./scripts/mainScript.js"></script>
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <div class="main-container">
+        <!--
+        <div class="mini-text-info">
+            <p>Ofertas especiais para empresas</p>
+        </div>
+        -->
+        <div class="menu-display-flex hide-mobile">
+            <div class="flex-2">
+                <a href="#"><img class="img invert" src="./media/lembrarte-no-background.png" alt="lembrarte"></a>
+            </div>
+            <div class="flex-9 hide-mobile jc-center">
+                <div class="links-menu">
+                    <!--<a class="selected-menu" href="#">ALL</a>-->
+                    <!--<a href="#">CLOTES</a>-->
+                    <a class="underline-anim" href="#gift-boxes">GIFTBOXES</a>
+                    <a class="underline-anim" href="#custom-mugs">PERSONALIZAÇÃO</a>
+                    <a class="underline-anim" href="#magic-mugs">CANECAS MAGICAS</a>
+                    <a class="underline-anim" href="#about">POR QUE OFERECER?</a>
+                    <a class="underline-anim" href="#pricing">TABELA DE PREÇOS</a>
+                    <!--<a href="#">MOUSEPADS</a>-->
+                    <!--<a href="#">OTHERS</a>-->
+                </div>
+            </div>
+            <div class="flex-2 links-menu-2 hide-mobile inline-social jc-center">
+                <!--<a class="social-icon" href="https://www.instagram.com/lembrartemadeira/"><img src="./media/instagram-brands-solid-full.svg" alt=""></a>-->
+                <!--<a class="social-icon" href=""><img src="./media/facebook-brands-solid-full.svg" alt=""></a>-->
+                <a class="underline-anim inine-link" href="./cart.html">
+                    <p class="bag-text2">CESTO</p>
+                    <img class="icon-img2" src="./media/gift.svg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU-->
+        <div class="mobile-menu-container">
+            <div class="mobile-menu-header">
+                <a href="#" class="mobile-logo">
+                <img src="./media/lembrarte-no-background.png" alt="lembrarte" class="mobile-logo-img invert">
+                </a>
+
+                <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+            </div>
+
+            <div class="mobile-menu-links" id="mobile-menu-links">
+                <a class="mobile-link" href="#gift-boxes">GIFTBOXES</a>
+                <a class="mobile-link" href="#custom-mugs">PERSONALIZAÇÃO</a>
+                <a class="mobile-link" href="#magic-mugs">CANECAS MAGICAS</a>
+                <a class="mobile-link" href="#about">POR QUE OFERECER?</a>
+                <a class="mobile-link" href="#pricing">TABELA DE PREÇOS</a>
+
+                <a class="mobile-link mobile-cart" href="./cart.html">
+                <p>CESTO</p>
+                <img src="./media/gift.svg" alt="Cesto" class="mobile-cart-icon">
+                </a>
+            </div>
+        </div>
+                
+        <div class="menu-info-banner menu-spacing">
+            <div class="info-container-info">
+                <div class="info-fix-container">
+                    <h2 class="spawn-02 title-banner">Coleção</h2>
+                    <h2 class="spawn-03 hide-mobile title-banner">Edição Limitada</h2>
+                    <h2 class="spawn-03 show-mobile title-banner">Edição</h2>
+                    <h2 class="spawn-04 show-mobile title-banner">Limitada</h2>
+                    <div class="text-and-button-banner">
+                        <p class="spawn-05 text-banner">Uma coleção exclusiva, cuidadosamente preparada, com stock restrito.</p>
+                        <a class="spawn-06 button-banner" href="#gift-boxes">Ver Coleção</a>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="text-banner-image">
+                <img src="./hoodies/temporalModel2.png" alt="image">
+            </div>
+            -->
+        </div>
+        
+
+        <div class="flex-container-deco extra-mobile-top-padding">
+            <div class="flex-child hide-mobile">
+                <h1 class="flex-deco anim-spawn-quick-1">FEITO PARA SER LEMBRADO</h1>
+            </div>
+            <div class="flex-child hide-mobile">
+                <h1 class="flex-deco anim-spawn-quick-2">DESENHADO COM CUIDADO, PARA DURAR</h1>
+            </div>
+            <div class="flex-child">
+                <h1 class="flex-deco anim-spawn-quick-3">MOMENTOS ETERNOS</h1>
+            </div>
+            <div class="flex-child hide-mobile">
+                <h1 class="flex-deco anim-spawn-quick-4">UM PRESENTE QUE MERECE SER LEMBRADO</h1>
+            </div>
+            <div class="flex-child hide-mobile">
+                <h1 class="flex-deco anim-spawn-quick-5">CADA DETALHE CONTA UMA HISTÓRIA</h1>
+            </div>
+        </div>
+
+        <div class="flex-container brightness-106 container-10-7">
+            <div class="flex-child">
+                <img class="anim-spawn-left flex-img" src="./mugs/mug-box/loop/MUGCAT.png" alt="">
+            </div>
+            <div class="flex-child extra-mobile-bottom-padding">
+                <h1 class="flex-title1 anim-spawn-right-delay-1">PRÁTICO</h1>
+                <h1 class="flex-title2 anim-spawn-right-delay-2">MEMORÁVEL</h1>
+                <h1 class="flex-title3 anim-spawn-right-delay-3">VALIOSO</h1>
+                <a href="#gift-boxes" class="no-deco-link3 flex-button anim-spawn-right-delay-4">Oferece Lembrarte</a>
+            </div>
+        </div>
+        
+        <div id="gift-boxes" class="section-title">
+            <h4 class="section-name anim-spawn-right-delay-1">GIFT BOXES</h4>
+            <div class="section-info">
+                <p class="anim-spawn-right-delay-2">O presente que eles nunca esquecerão</p>
+            </div>
+            <!--<div class="section-button">
+                <a href="#" class="anim-spawn-right-delay-3">SEE MORE</a>
+            </div>-->
+        </div>
+
+        <div id="products">
+            <!--
+            <div class="flex-mobile">
+                <div class="flex-items-container brightness-106">
+                    <div class="flex-items">
+                        <img class="flex-item-img clip-border" src="./mugs/mug-box/loop/MUGCAT.png" alt="">
+                        <img class="flex-item-img-back clip-border" src="./mugs/mug-box/loop/MUGCAT_BACK.png" alt="">
+                        <div class="flex-name-and-price">
+                            <p class="flet-item-name"><span><span class="hide-mobile">Caneca - </span>Gato vintage</span></p>
+                            <p class="flet-item-price">9.99€</p>
+                        </div>
+                    </div>
+                    <div class="flex-items">
+                        <img class="flex-item-img clip-border" src="./mugs/mug-box/loop/BlueCatDFinal.png" alt="">
+                        <img class="flex-item-img-back clip-border" src="./mugs/mug-box/loop/BlueCatDFinal_BACK.png" alt="">
+                        <img class="flex-item-img-custom" src="./mugs/tags/limited-edition.png" alt="">
+                        <div class="flex-name-and-price">
+                            <p class="flet-item-name"><span><span class="hide-mobile">Caneca - </span>Gato Loop</span></p>
+                            <p class="flet-item-price">9.99€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-items-container brightness-106 border-top">
+                    <div class="flex-items">
+                        <img class="flex-item-img clip-border" src="./mugs/mug-box/loop/AnimeFinal.png" alt="">
+                        <img class="flex-item-img-back clip-border" src="./mugs/mug-box/loop/AnimeFinal_BACK.png" alt="">
+                        <img class="flex-item-img-custom" src="./mugs/tags/limited-edition.png" alt="">
+                        <div class="flex-name-and-price">
+                            <p class="flet-item-name"><span><span class="hide-mobile">Caneca - </span>Rapariga Anime</span></p>
+                            <p class="flet-item-price">9.99€</p>
+                        </div>
+                    </div>
+                    <div class="flex-items">
+                        <img class="flex-item-img clip-border" src="./mugs/mug-box/loop/SAKURAMUG.png" alt="">
+                        <img class="flex-item-img-back clip-border" src="./mugs/mug-box/loop/SAKURAMUG_BACK.png" alt="">
+                        <img class="flex-item-img-custom" src="./mugs/tags/limited-edition.png" alt="">
+                        <div class="flex-name-and-price">
+                            <p class="flet-item-name"><span><span class="hide-mobile">Caneca - </span>Sakura Loop</span></p>
+                            <p class="flet-item-price">9.99€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+
+            <div class="flex-items-container brightness-106">
+                <div class="flex-items">
+                    <div class="item-spacing"></div>
+                </div>
+            </div>
+
+            <div class="flex-mobile">
+                <div class="flex-items-container brightness-106">
+                    <div class="flex-items">
+                        <img class="flex-item-img clip-border" src="./mugs/mug-box/loop/erizo.png" alt="">
+                        <img class="flex-item-img-back clip-border" src="./mugs/mug-box/loop/erizo_BACK.png" alt="">
+                        <div class="flex-name-and-price">
+                            <p class="flet-item-name"><span><span class="hide-mobile">Caneca - </span>Ouriço Loop</span></p>
+                            <p class="flet-item-price">9.99€</p>
+                        </div>
+                    </div>
+                    <div class="flex-items">
+                        <img class="flex-item-img clip-border" src="./mugs/mug-box/loop/parabens.png" alt="">
+                        <img class="flex-item-img-back clip-border" src="./mugs/mug-box/loop/parabens_BACK.png" alt="">
+                        <img class="flex-item-img-custom" src="./mugs/tags/custom.png" alt="">
+                        <div class="flex-name-and-price">
+                            <p class="flet-item-name"><span><span class="hide-mobile">Caneca - </span>Aniversário</span></p>
+                            <p class="flet-item-price">11.99€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-items-container brightness-106 border-top">
+                    <div class="flex-items">
+                        <img class="flex-item-img clip-border" src="./mugs/mug-box/loop/natal.png" alt="">
+                        <img class="flex-item-img-back clip-border" src="./mugs/mug-box/loop/natal_BACK.png" alt="">
+                        <img class="flex-item-img-custom" src="./mugs/tags/custom.png" alt="">
+                        <div class="flex-name-and-price">
+                            <p class="flet-item-name"><span><span class="hide-mobile">Caneca - </span>Feliz Natal</span></p>
+                            <p class="flet-item-price">11.99€</p>
+                        </div>
+                    </div>
+                    <div class="flex-items">
+                        <img class="flex-item-img clip-border" src="./mugs/mug-box/loop/dreams.png" alt="">
+                        <img class="flex-item-img-back clip-border" src="./mugs/mug-box/loop/dreams_BACK.png" alt="">
+                        <div class="flex-name-and-price">
+                            <p class="flet-item-name"><span><span class="hide-mobile">Caneca - </span>Segue os teus sonhos</span></p>
+                            <p class="flet-item-price">9.99€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-items-container brightness-106">
+                <div class="flex-items">
+                    <div class="item-spacing"></div>
+                </div>
+            </div>
+
+            <div class="flex-mobile">
+                <div class="flex-items-container brightness-106">
+                    <div class="flex-items">
+                        <img class="flex-item-img clip-border" src="./mugs/mug-box/loop/hellCat.png" alt="">
+                        <img class="flex-item-img-back clip-border" src="./mugs/mug-box/loop/hellCat_BACK.png" alt="">
+                        <div class="flex-name-and-price">
+                            <p class="flet-item-name"><span><span class="hide-mobile">Caneca - </span>Gato vintage</span></p>
+                            <p class="flet-item-price">9.99€</p>
+                        </div>
+                    </div>
+                    <div class="flex-items">
+                        <a class="no-deco-link3" href="item.html">
+                            <img class="flex-item-img clip-border" src="./mugs/mug-box/loop/fenix.png" alt="">
+                            <img class="flex-item-img-back clip-border" src="./mugs/mug-box/loop/fenix_BACK.png" alt="">
+                            <div class="flex-name-and-price">
+                                <p class="flet-item-name"><span><span class="hide-mobile">Caneca - </span>FENIX</span></p>
+                                <p class="flet-item-price">9.99€</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-items-container brightness-106 border-top">
+                    <div class="flex-items">
+                        <img class="flex-item-img clip-border" src="./mugs/mug-box/loop/hellCat.png" alt="">
+                        <img class="flex-item-img-back clip-border" src="./mugs/mug-box/loop/hellCat_BACK.png" alt="">
+                        <div class="flex-name-and-price">
+                            <p class="flet-item-name"><span><span class="hide-mobile">Caneca - </span>Rapariga Anime</span></p>
+                            <p class="flet-item-price">9.99€</p>
+                        </div>
+                    </div>
+                    <div class="flex-items">
+                        <img class="flex-item-img clip-border" src="./mugs/mug-box/loop/hellCat.png" alt="">
+                        <img class="flex-item-img-back clip-border" src="./mugs/mug-box/loop/hellCat_BACK.png" alt="">
+                        <div class="flex-name-and-price">
+                            <p class="flet-item-name"><span><span class="hide-mobile">Caneca - </span>Sakura Loop</span></p>
+                            <p class="flet-item-price">9.99€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+        </div>
+
+
+        <div class="flex-container-deco" id="custom-mugs">
+            <div class="flex-child extra-mobile-top-padding">
+                <h1 class="flex-deco anim-spawn-quick-1">Não encontrou o artigo perfeito?</h1>
+            </div>
+        </div>
+        <div class="flex-container invert-pos-flex brightness-106 centered-container-middle">
+            <div class="flex-child extra-mobile-bottom-padding">
+                <img class="flex-img anim-spawn-left" src="./mugs/mug-only/loop/fenix.png" alt="">
+                <h1 onclick="abrirWhatsapp('Olá! Gostaria de fazer um pedido personalizado do zero!')" class="flex-button anim-spawn-right-delay-4 show-mobile-flex inline-icon-text">
+                    <p>Fale connosco!</p>
+                    <img src="./media/whatsapp-brands-solid-full.svg" alt="">
+                </h1>
+            </div>
+            <div class="flex-child centered-mobile">
+                <h1 class="flex-title5 anim-spawn-right-delay-2">Crie a caneca<br class="show-mobile"> <span class="mobile-marker"> única </span></h1>
+                <p class="flex-text anim-spawn-right-delay-3">Não encontrou o artigo perfeito? <br>Peça-o personalizado, feito à sua medida.</p>
+                <h1 onclick="abrirWhatsapp('Olá! Gostaria de fazer um pedido personalizado do zero!')" class="flex-button anim-spawn-right-delay-4 hide-mobile inline-icon-text">
+                    <p>Fale connosco!</p>
+                    <img src="./media/whatsapp-brands-solid-full.svg" alt="">
+                </h1>
+            </div>
+        </div>
+
+
+        <!--<div class="container-info-mugs hide-mobile">
+            <h1 class="flex-text anim-spawn-right-delay-2">Um artigo ideal para:</h1>
+            <div class="flex-items-container flex-mobile-column border-sides bottom-1px">
+                <div class="flex-items">
+                    <div class="flex-name-and-price">
+                        <p class="flex-item-center anim-spawn-bottom">Festas</p>
+                    </div>
+                    <img class="flex-item-img-base anim-spawn-bottom" src="./mugs/mug-only/loop/example0.png" alt="">
+                </div>
+                <div class="flex-items">
+                    <div class="flex-name-and-price">
+                        <p class="flex-item-center anim-spawn-bottom">Eventos</p>
+                    </div>
+                    <img class="flex-item-img-base anim-spawn-bottom" src="./mugs/mug-only/loop/comunhao.png" alt="">
+                </div>
+                <div class="flex-items">
+                    <div class="flex-name-and-price">
+                        <p class="flex-item-center anim-spawn-bottom">Empresas</p>
+                    </div>
+                    <img class="flex-item-img-base anim-spawn-bottom" src="./mugs/mug-only/loop/empresa.png" alt="">
+                </div>
+                <div class="flex-items">
+                    <div class="flex-name-and-price">
+                        <p class="flex-item-center anim-spawn-bottom">Familias</p>
+                    </div>
+                    <img class="flex-item-img-base anim-spawn-bottom" src="./mugs/mug-only/loop/familia.png" alt="">
+                </div>
+            </div>
+        </div>-->
+        
+
+        
+        <!--
+        <div class="menu-banner">
+            <div class="section-link-container">
+                <img src="./hoodies/temporalModel1.png" alt="Banner">
+                <p class="text-over-img">CLOTES</p>
+            </div>
+            <div class="section-link-container">
+                <img src="./mugs/mug-box/loop/AnimeFinal.png" alt="Banner">
+                <p class="text-over-img">MUGS</p>
+            </div>
+            <div class="section-link-container">
+                <img src="./hoodies/temporalModel2.png" alt="Banner">
+                <p class="text-over-img">ACCESSORIES</p>
+            </div>
+        </div>
+        -->
+
+        <div class="flex-magic-container black-back left-container" id="magic-mugs">
+            <div class="flex-child extra-mobile-top-padding">
+                <h1 class="flex-title6 anim-spawn-right-delay-2">Um Presente <span class="magic-highlight">Mágico</span></h1>
+                <p class="flex-text anim-spawn-right-delay-3">Uma caneca mágica que revela <br class="show-mobile"> o design ao contacto com o calor!</p>
+                <div class="hide-mobile">
+                    <p class="flex-text anim-spawn-right-delay-3">Escolha qualquer design com esta característica, <br> seja do nosso catálogo ou personalizado!</p>
+                    <h1 onclick="abrirWhatsapp('Olá! Gostaria de fazer um pedido personalizado de uma caneca magica!')" class="flex-button-black anim-spawn-right-delay-4 inline-icon-text2">
+                        <p>Fale connosco!</p>
+                        <img src="./media/whatsapp-brands-solid-full.svg" alt="">
+                    </h1>
+                </div>
+            </div>
+            <div class="flex-child">
+                <div class="flex-stack anim-spawn-left">
+                    <img class="fade-container stack-img" src="./mugs/mug-only/magic/hide_mug.png" alt="">
+                    <img class="stack-img" src="./mugs/mug-only/magic/show_mug.png" alt="">
+                    <img class="stack-img z-index-0" src="./mugs/mug-only/magic/shadow_mug.png" alt="">
+                </div>
+            </div>
+            <div class="flex-child show-mobile extra-mobile-bottom-padding">
+                <div class="show-mobile">
+                    <p class="flex-text anim-spawn-right-delay-3">Escolha qualquer design com <br class="show-mobile"> esta característica, <br class="hide-mobile"> seja do nosso <br class="show-mobile">  catálogo ou personalizado!</p>
+                    <h1 onclick="abrirWhatsapp('Olá! Gostaria de fazer um pedido personalizado de uma caneca magica!')" class="flex-button-black anim-spawn-right-delay-4 inline-icon-text2">
+                        <p>Fale connosco!</p>
+                        <img src="./media/whatsapp-brands-solid-full.svg" alt="">
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        
+       
+
+        <div class="flex-container-deco extra-mobile-top-padding">
+            <div class="flex-child">
+                <h1 class="flex-deco anim-spawn-quick-1">- UMA DECISÃO DIFÍCIL-</h1>
+            </div>
+        </div>
+        <div class="flex-container brightness-106 centered-container-middle">
+            <!-- Lado café -->
+            <a href="./item.html?id=11" class="text-deco-none flex-child hide-mobile">    
+                <div class="img-hide-container anim-spawn-left">
+                    <img class="front-img" src="./mugs/mug-box/loop/cafe.png" alt="">
+                    <img class="back-img" src="./mugs/mug-only/loop/cafe_mug.png" alt="">
+                </div>
+                <p class="flex-button anim-spawn-bottom">Equipe Café</p>
+            </a>
+
+            <!-- Título central -->
+            <div class="flex-child">
+                <p class="flex-title5 anim-spawn-bottom">« Dois mundos, <br> uma caneca »</p>
+                <p class="flex-text anim-spawn-right-delay-3">O presente perfeito para <br class="show-mobile"> amantes de café ou chá</p>
+                <p class="flex-text anim-spawn-right-delay-3">Faça a sua escolha:</p>
+            </div>
+            
+            <div class="mugs-choose-container">
+                <a href="./item.html?id=11" class="text-deco-none flex-child show-mobile ">    
+                    <div class="img-hide-container anim-spawn-left">
+                        <img class="front-img" src="./mugs/mug-box/loop/cafe.png" alt="">
+                        <img class="back-img" src="./mugs/mug-only/loop/cafe_mug.png" alt="">
+                    </div>
+                    <p class="flex-button anim-spawn-bottom">Equipe Café</p>
+                </a>
+
+                <!-- Lado té -->
+                <a href="./item.html?id=12" class="text-deco-none flex-child ">    
+                    <div class="img-hide-container anim-spawn-right-delay-1">
+                        <img class="front-img" src="./mugs/mug-box/loop/cha.png" alt="">
+                        <img class="back-img" src="./mugs/mug-only/loop/cha_mug.png" alt="">
+                    </div>
+                    <p class="flex-button anim-spawn-bottom">Equipe Chá</p>
+                </a>
+            </div>
+            
+
+        </div>
+
+
+
+
+
+
+        
+        <div class="flex-magic-container back-grey left-container" id="about">
+            <div class="flex-child extra-mobile-top-padding">
+                <h1 class="flex-title5 anim-spawn-right-delay-1">O Prazer de <span class="highlight-text"> <br class="show-mobile"> Oferecer</span></h1>
+                <p class="text-responsive anim-spawn-left">Poucas coisas são tão especiais quanto ver o sorriso de alguém ao receber um presente. E a ciência mostra que esse gesto simples tem um impacto positivo para quem oferece e para quem recebe.</p>
+                <p class="text-responsive anim-spawn-left">Estudos realizados por universidades como <span class="highlight-text">Harvard</span> e <span class="highlight-text">British Columbia</span> revelam que pessoas que dedicam tempo e recursos para oferecer algo a familiares ou amigos experimentam maior sensação de bem-estar e fortalecem seus laços afetivos. Em um experimento clássico, participantes que usaram uma quantia em dinheiro para oferecer algo a outra pessoa relataram não apenas mais felicidade pessoal, mas também uma conexão mais próxima com quem recebeu.</p>
+                <p class="text-responsive anim-spawn-left">Oferecer não é apenas entregar um objeto: é criar um momento de alegria partilhada e construir memórias que permanecem. Cada caneca escolhida para alguém especial pode ser um símbolo desse carinho e dessa felicidade em comum.</p>                                          
+            </div>
+            <div class="flex-child">
+                <div class="flex-stack anim-spawn-right-delay-1">
+                    <img class="stack-img hight-contrast" src="./mugs/mug-only/loop/gift.png" alt="">
+                    <img class="stack-img z-index-0" src="./mugs/mug-only/magic/soft_shadow.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-magic-container back-grey right-container" id="about">
+            <div class="flex-child hide-mobile">
+                <div class="flex-stack anim-spawn-right-delay-1">
+                    <img class="stack-img hight-contrast" src="./mugs/mug-only/loop/aniversary_mug.png" alt="">
+                    <img class="stack-img z-index-0" src="./mugs/mug-only/magic/soft_shadow.png" alt="">
+                </div>
+            </div>
+            <div class="flex-child">
+                <h1 class="flex-title5 anim-spawn-right-delay-1">A Magia do <span class="highlight-text2"> <br class="show-mobile">Toque Pessoal</span></h1>
+                <p class="text-responsive anim-spawn-left">Nada é tão especial quanto sentir que alguém se importou de verdade. Estudos de universidades renomadas, como <span class="highlight-text2">Harvard</span> e <span class="highlight-text2">Stanford</span>, mostram que os presentes personalizados aumentam a sensação de conexão e valorização entre as pessoas.</p>
+                <p class="text-responsive anim-spawn-left">Quando dedicamos tempo para escolher ou criar algo que reflita os gostos ou a personalidade de quem vai receber, o gesto vai além do objeto: ele comunica atenção, cuidado e consideração. Pesquisas indicam que o receptor percebe essa intenção e responde com gratidão, reforçando os laços afetivos, enquanto quem dá o presente também experimenta maior bem-estar e satisfação pessoal.</p>
+                <p class="text-responsive anim-spawn-left">Presentes personalizados transformam momentos comuns em lembranças especiais. Uma caneca com uma frase única, um detalhe que remeta a uma memória compartilhada, ou qualquer objeto pensado exclusivamente para alguém se torna um símbolo duradouro de carinho e atenção, criando memórias que ficam na lembrança muito depois de o presente ter sido usado.</p>     
+            </div>
+            <div class="flex-child show-mobile">
+                <div class="flex-stack anim-spawn-right-delay-1">
+                    <img class="stack-img hight-contrast" src="./mugs/mug-only/loop/aniversary_mug.png" alt="">
+                    <img class="stack-img z-index-0" src="./mugs/mug-only/magic/soft_shadow.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+
+        <!--
+
+        <div class="section-title">
+            <h4 class="section-name anim-spawn-right-delay-1">MUGS</h4>
+            <div class="section-info">
+                <p class="anim-spawn-right-delay-2">Daily pieces with timeless design</p>
+            </div>
+            <div class="section-button">
+                <a href="#" class="anim-spawn-right-delay-3">SEE MORE</a>
+            </div>
+        </div>
+
+        <div class="items-container">
+            <div class="items-inline-block">
+                <div class="item display-flex">
+                    <div class="image-wrapper">
+                        <img class="background-image" src="./mugs/mug-box/loop/SAKURAMUG.png" alt="Banner">
+                        <img class="overlay-image" src="./mugs/byLoop.png" alt="Banner">
+                    </div>
+                    <div class="item-info-container">
+                        <div class="item-info">
+                            <p class="item-name">Sakura Mug</p>
+                            <p class="item-price">€9,99</p>
+                        </div>
+                        <div class="item-banner">
+                            <img class="img-banner" src="./mugs/mug-banner/loop/banner-sakura.png" alt="Banner">
+                        </div>
+                    </div>
+                </div>
+                <div class="item display-flex">
+                    <div class="image-wrapper">
+                        <img class="background-image" src="./mugs/mug-only/loop/snake-mug.png" alt="Banner">
+                        <img class="overlay-image" src="./mugs/byLoop.png" alt="Banner">
+                    </div>
+                    <div class="item-info-container">
+                        <div class="item-info">
+                            <p class="item-name">Snake Mug</p>
+                            <p class="item-price">€9,99</p>
+                        </div>
+                        <div class="item-banner">
+                            <img class="img-banner" src="./mugs/mug-banner/loop/banner-snake.png" alt="Banner">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items-inline-block">
+                <div class="item display-flex">
+                    <div class="image-wrapper">
+                        <img class="background-image" src="./mugs/mug-box/loop/BlueCatDFinal.png" alt="Banner">
+                        <img class="overlay-image" src="./mugs/byLoop.png" alt="Banner">
+                    </div>
+                    <div class="item-info-container">
+                        <div class="item-info">
+                            <p class="item-name">Cat Loop Mug</p>
+                            <p class="item-price">€9,99</p>
+                        </div>
+                        <div class="item-banner">
+                            <img class="img-banner" src="./mugs/mug-banner/loop/banner-cat.png" alt="Banner">
+                        </div>
+                    </div>
+                </div>
+                <div class="item display-flex">
+                    <div class="image-wrapper">
+                        <img class="background-image" src="./mugs/mug-only/loop/anime-mug.png" alt="Banner">
+                        <img class="overlay-image" src="./mugs/byLoop - copia.png" alt="Banner">
+                    </div>
+                    <div class="item-info-container">
+                        <div class="item-info">
+                            <p class="item-name">Anime Mug</p>
+                            <p class="item-price">€9,99</p>
+                        </div>
+                        <div class="item-banner">
+                            <img class="img-banner" src="./mugs/mug-banner/loop/banner-anime.png" alt="Banner">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+        <!--
+        <div class="only-title" id="packs">
+            <h1 class="flex-title1 anim-spawn-bottom top-padding-title">Conheça os <br class="show-mobile">nossos pacotes</h1>  
+        </div>
+        <div class="flex-mobile-column">
+            <div class="packs-container">
+                <div class="single-pack">
+                    <p class="single-pack-title">Basic pack</p>
+                    <p class="single-pack-description">Catalogue design</p>
+                    <div class="include-container">
+                        <div class="inline-include">
+                            <img class="include-img" src="./media/circle-check-solid-full.svg" alt="">
+                            <p class="include-text">Inclui caja + Sticker</p>
+                        </div>
+                        <div class="inline-include">
+                            <img class="include-img" src="./media/circle-xmark-solid-full.svg" alt="">
+                            <p class="include-text not-include">Diseño personalizado</p>
+                        </div>
+                        <div class="inline-include">
+                            <img class="include-img" src="./media/circle-xmark-solid-full.svg" alt="">
+                            <p class="include-text not-include">Posavasos</p>
+                        </div>
+                        <div class="inline-include">
+                            <img class="include-img" src="./media/circle-xmark-solid-full.svg" alt="">
+                            <p class="include-text not-include">Llavero</p>
+                        </div>
+                    </div>
+                    <img class="pack-img" src="./mugs/mug-box/loop/AnimeFinal.png" alt="img">
+                    <p class="pack-price">9.99€</p>
+                </div>
+                <div class="single-pack">
+                    <p class="single-pack-title">Custom pack</p>
+                    <p class="single-pack-description">Custom design pack</p>
+                    <div class="include-container">
+                        <div class="inline-include">
+                            <img class="include-img" src="./media/circle-check-solid-full.svg" alt="">
+                            <p class="include-text">Inclui caja + Sticker</p>
+                        </div>
+                        <div class="inline-include">
+                            <img class="include-img" src="./media/circle-check-solid-full.svg" alt="">
+                            <p class="include-text not-include">Diseño personalizado</p>
+                        </div>
+                        <div class="inline-include">
+                            <img class="include-img" src="./media/circle-xmark-solid-full.svg" alt="">
+                            <p class="include-text not-include">Posavasos</p>
+                        </div>
+                        <div class="inline-include">
+                            <img class="include-img" src="./media/circle-xmark-solid-full.svg" alt="">
+                            <p class="include-text not-include">Llavero</p>
+                        </div>
+                    </div>
+                    <img class="pack-img" src="./mugs/mug-box/loop/parabens.png" alt="img">
+                    <p class="pack-price">13.99€</p>
+                </div>
+                <div class="single-pack">
+                    <p class="single-pack-title">Catalogue pack</p>
+                    <p class="single-pack-description">Full combo pack</p>
+                    <div class="include-container">
+                        <div class="inline-include">
+                            <img class="include-img" src="./media/circle-check-solid-full.svg" alt="">
+                            <p class="include-text">Inclui caja + Sticker</p>
+                        </div>
+                        <div class="inline-include">
+                            <img class="include-img" src="./media/circle-xmark-solid-full.svg" alt="">
+                            <p class="include-text not-include">Diseño personalizado</p>
+                        </div>
+                        <div class="inline-include">
+                            <img class="include-img" src="./media/circle-check-solid-full.svg" alt="">
+                            <p class="include-text not-include">Posavasos</p>
+                        </div>
+                        <div class="inline-include">
+                            <img class="include-img" src="./media/circle-check-solid-full.svg" alt="">
+                            <p class="include-text not-include">Llavero</p>
+                        </div>
+                    </div>
+                    <img class="pack-img" src="./mugs/mug-box/loop/AnimeFinal.png" alt="img">
+                    <p class="pack-price">12.99€</p>
+                </div>
+                <div class="single-pack">
+                    <p class="single-pack-title">Full custom pack</p>
+                    <p class="single-pack-description">Full combo pack</p>
+                    <div class="include-container">
+                        <div class="inline-include">
+                            <img class="include-img" src="./media/circle-check-solid-full.svg" alt="">
+                            <p class="include-text">Inclui caja + Sticker</p>
+                        </div>
+                        <div class="inline-include">
+                            <img class="include-img" src="./media/circle-check-solid-full.svg" alt="">
+                            <p class="include-text not-include">Diseño personalizado</p>
+                        </div>
+                        <div class="inline-include">
+                            <img class="include-img" src="./media/circle-check-solid-full.svg" alt="">
+                            <p class="include-text not-include">Posavasos</p>
+                        </div>
+                        <div class="inline-include">
+                            <img class="include-img" src="./media/circle-check-solid-full.svg" alt="">
+                            <p class="include-text not-include">Llavero</p>
+                        </div>
+                    </div>
+                    <img class="pack-img" src="./mugs/mug-box/loop/AnimeFinal.png" alt="img">
+                    <p class="pack-price">16.99€</p>
+                </div>
+            </div>
+        </div>
+       -->
+
+        <div class="flex-container-deco top-padding-title" id="pricing">
+            <div class="flex-child">
+                <h1 class="flex-deco anim-spawn-quick-1">* Ofertas especiais para empresas</h1>
+            </div>
+        </div>
+
+        <div class="flex-container brightness-106 table-container">
+            <div class="flex-child">
+                <h1 class="flex-title5 anim-spawn-right-delay-1 bottom-mini-margin-mobile">Tabela de preços</h1>
+                <p class="flex-text anim-spawn-right-delay-2 hide-mobile">Tem alguma duvida ou pergunta?</p>
+                <div class="flex-container gap-2 hide-mobile">
+                    <!--<h1 onclick="abrirWhatsapp()" class="flex-button-inline anim-spawn-right-delay-3">Perguntas frequentes</h1>-->
+                    <h1 onclick="abrirWhatsapp('Olá! Tenho uma dúvida!')" class="flex-button-inline anim-spawn-right-delay-4 inline-icon-text">
+                        <p>Fale connosco diretamente!</p>
+                        <img src="./media/whatsapp-brands-solid-full.svg" alt="">
+                    </h1>
+                </div>
+            </div>
+
+            <div class="flex-child margin-1 anim-spawn-left">
+    <table class="table-flex">
+        <tr>
+            <th>TIPO DE CANECA</th>
+            <th>PREÇO</th>
+        </tr>
+        <tr>
+            <td>Caneca básica</td>
+            <td class="precio">8,99 €</td>
+        </tr>
+        <tr>
+            <td>Caneca mágica</td>
+            <td class="precio">10,99 €</td>
+        </tr>
+        <tr>
+            <th colspan="2">EXTRAS</th>
+        </tr>
+        <tr>
+            <td>Caixa</td>
+            <td class="precio">+ 2 €</td>
+        </tr>
+        <tr>
+            <td>Design personalizado</td>
+            <td class="precio">+ 4 €</td>
+        </tr>
+        <tr>
+            <td>Base para copo</td>
+            <td class="precio">+ 2 €</td>
+        </tr>
+        <tr>
+            <td>Chaveiro</td>
+            <td class="precio">+ 2 €</td>
+        </tr>
+    </table>
+</div>
+
+
+            <div class="flex-child show-mobile">
+                <p class="flex-text anim-spawn-right-delay-2">Tem alguma duvida ou pergunta?</p>
+                <div class="flex-container gap-2">
+                    <!--<h1 onclick="abrirWhatsapp()" class="flex-button-inline anim-spawn-right-delay-3">Perguntas frequentes</h1>-->
+                    <h1 onclick="abrirWhatsapp('Olá! Tenho uma dúvida!')" class="flex-button-inline anim-spawn-right-delay-4 inline-icon-text">
+                        <p>Fale connosco diretamente!</p>
+                        <img src="./media/whatsapp-brands-solid-full.svg" alt="">
+                    </h1>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--
+        <div class="section-title">
+            <h4 class="section-name">CLOTES</h4>
+            <div class="section-info">
+                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae obcaecati delectus fugit rem error ab impedit amet eveniet odio illum</p>
+            </div>
+            <div class="section-button">
+                <a href="#">SEE MORE</a>
+            </div>
+        </div>
+
+        <div class="menu-banner">
+            <div><img src="./hoodies/clotes-section.png" alt="Banner"></div>
+            <div><img src="./hoodies/clotes-section.png" alt="Banner"></div>
+            <div><img src="./hoodies/clotes-section.png" alt="Banner"></div>
+            <div><img src="./hoodies/clotes-section.png" alt="Banner"></div>
+        </div>
+        -->
+
+        
+        <div class="footer">
+            <div class="footer-inline">
+                <div class="vertical-align flex-4 anim-spawn-right-delay-1">
+                    <img class="footer-logo" src="./media/lembrarte-no-background.png" alt="Lembrarte">
+                    <div class="inline-social-footer">
+                        <a class="social-icon-footer" href="https://www.instagram.com/lembrartemadeira/">INSTAGRAM</a>
+                        <a class="social-icon-footer" href="https://www.facebook.com/share/1BZkKzEwWC/">FACEBOOK</a>
+                        <a class="social-icon-footer" href="mailto:lembrartemadeira@gmail.com">E-MAIL</a>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <div class="flex-row">
+                        <hr class="anim-spawn-bottom">
+                    </div>
+                </div>
+                <div class="vertical-align flex-4 anim-spawn-left">
+                    <div class="align-center">
+                        <p class="footer-title">Sobre Nós</p>
+                        <div class="flex-column">
+                            <a href="./about.html">A Nossa Visão</a>
+                            <!--<a href="#">Preguntas frecuentes</a>-->
+                            <!--<a href="#">Blog</a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-align flex-4 anim-spawn-left">
+                    <div class="align-center">
+                        <p class="footer-title">Contacto</p>
+                        <div class="flex-column">
+                            <a href="mailto:lembrartemadeira@gmail.com">lembrartemadeira@gmail.com</a>
+                            <a href="tel:+351916865014">+351916865014</a>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="vertical-align flex-4 anim-spawn-left">
+                    <div class="align-center">
+                        <p class="footer-title">Politica</p>
+                        <div class="flex-column">
+                            <a href="#">Política de privacidad</a>
+                            <a href="#">Términos y condiciones</a>
+                            <a href="#">Política de cookies</a>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+            <div class="text-info-footer anim-spawn-bottom">
+                <p>LEMBR<span class="bigger-letter">A</span>RTE<span class="mini-letter">©</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

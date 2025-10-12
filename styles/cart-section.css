@@ -1,0 +1,339 @@
+:root {
+    --font-main: "SerifFont", serif;
+    /*font-family: var(--font-main);*/
+}
+
+html, body{
+    height: 93vh;
+}
+
+.cart-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.cart-item-container{
+    flex: 2;
+    height: 100%;
+    padding: 1vw 1vw 1vw 10vw;
+    background-color: #e9e9ea;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    filter: brightness(1.04);
+    overflow: auto;
+}
+
+.cart-item-same-padding{
+    padding: 0vw 10vw 0vw 10vw !important;
+}
+
+
+
+
+.shared-cart-text{
+    margin-top: 40px;
+    font-size: 1.2rem;
+    font-family: "Wix Madefor Display", serif; /* tu fuente serif */
+}
+.shared-cart-link{
+    font-size: 1.2rem;
+    font-family: "Wix Madefor Display", serif; /* tu fuente serif */
+    color: rgb(34, 122, 211); text-decoration: none;
+}
+.shared-cart-total{
+    font-size: 2rem;
+    font-family: var(--font-main);
+}
+
+
+
+.cart-info-container{
+    flex: 1;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    /*border-left: 1px solid black;*/
+    padding: 2vw 2vw 2vw 2vw;
+}
+
+.cart-item{
+    background-color: #e9e9ea;
+    border-bottom: 1px solid black;
+}
+.cart-img-and-info-container{
+    display: flex;
+    margin: auto;
+}
+
+.cart-img-and-info-container a{
+    
+    margin: auto 0px;
+}
+
+
+.cart-item-img{
+    width: 13vw;
+    height: 13vw;
+    margin: auto 0px;
+}
+.cart-item-info-container{
+    margin: auto 0px;
+    font-family: "Wix Madefor Display", serif; /* tu fuente serif */
+}
+
+.cart-item-status{
+    font-size: 1rem;
+    color: rgb(0, 135, 237);
+}
+
+.cart-item-price{
+    font-family: var(--font-main);
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(221, 0, 81);
+    width: max-content;
+    padding: 1px 10px;
+}
+
+.inline-check{
+    display: flex;
+    margin: 0px;
+}
+
+.inline-check img{
+    width: 24px;
+    height: 24px;
+}
+
+.item-fix-margin{
+    margin: 10px 10px 10px 10px;
+}
+
+.cart-item-name{
+    font-size: 2rem;
+    font-family: var(--font-main);
+    color: #000000;
+    text-align: left;
+}
+.cart-item-desc{
+    font-family: "Wix Madefor Display", serif; /* tu fuente serif */
+    margin-bottom: 7px;
+}
+
+.cart-quantity-options{
+    display: flex;
+    margin: 0px 10px 10px 15px;
+}
+
+.item-remove-container{
+    flex: 1;
+    margin: auto 0px 0px 0px;
+}
+
+.item-remove{
+    cursor: pointer;
+    width: max-content;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    border: 0px;
+    background: transparent;
+    font-family: "Wix Madefor Display", serif; /* tu fuente serif */
+    font-size: 1rem;
+}
+
+.cart-item-quantity-controllers{
+    flex: 1;
+}
+
+.cart-item-quantity{
+    width: max-content;
+    margin: auto 0px auto auto;
+}
+
+.item-button-quantity-selector{
+    border: 0px;
+    background: transparent;
+    font-family: "Wix Madefor Display", serif; /* tu fuente serif */
+    font-size: 1.3rem;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.item-quantity{
+    font-family: "Wix Madefor Display", serif; /* tu fuente serif */
+    font-size: 1.1rem;
+    text-align: center;
+    width: 40px;
+    text-align: center;
+    border: 0px;
+    background-color: transparent;
+}
+
+.item-quantity::-webkit-inner-spin-button,
+.item-quantity::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Oculta las flechas en Firefox */
+.item-quantity[type=number] {
+  -moz-appearance: textfield;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  border: 1px solid black;
+  appearance: none;      /* elimina el estilo del navegador */
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+  left: -4px;
+}
+
+.checkbox-container{
+  left: 4px;
+  position: relative;
+}
+
+.checkbox:checked {
+  background-color: black;
+}
+
+/* Dibujamos el check blanco al marcar */
+.checkbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 0px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.cart-info-title{
+    font-size: 3rem;
+    font-family: var(--font-main);
+}
+
+.total-and-price-container{
+    display: flex;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 15px 0px;
+    padding: 15px 0px;
+}
+
+.total-text{
+    font-weight: 600;
+    flex: 1;
+    font-size: 1.8rem;
+    font-family: "Wix Madefor Display", serif; /* tu fuente serif */
+}
+
+.total-price{
+    font-weight: 600;
+    text-align: right;
+    flex: 1;
+    font-size: 1.8rem;
+    font-family: "Wix Madefor Display", serif; /* tu fuente serif */
+}
+
+.checkout-button{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    background-color: white;
+}
+
+.checkout-button:hover{
+    border: 1px solid white;
+    filter: invert(1) hue-rotate(180deg);
+    cursor: pointer;
+}
+
+.checkout-button-text{
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--font-main);
+    margin: auto 3px auto auto;
+}
+
+.checkout-button-img{
+    width: 40px;
+    height: 40px;
+    margin: auto auto auto 3px;
+}
+
+.checkout-info{
+    display: flex;
+    border: 1px solid #dd005178;
+    margin-bottom: 15px;
+}
+
+.checkout-info-img{
+    width: 30px;
+    height: 30px;
+    margin: auto auto auto 7px;
+    filter: opacity(0.5);
+}
+
+.checkout-info-text{
+    font-size: 1rem;
+    font-family: "Wix Madefor Display", serif; /* tu fuente serif */
+    padding: 15px 18px 15px 7px;
+    font-weight: 500;
+    color: #dd005178; 
+}
+
+.empty-cart {
+    font-size: 1.5rem;
+    color: #9e9e9e;
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media (max-width: 1200px) {
+    .hide-mobile{
+        display: none !important;
+    }
+    
+    .cart-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .cart-item-container{
+        flex: 2;
+        padding: 1vw 1vw 1vw 1vw;
+        background-color: #e9e9ea;
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+        filter: brightness(1.04);
+        overflow:visible;
+    }
+
+    .cart-info-container{
+        flex: 1;
+        height: auto;
+        margin-top: 4rem;
+        background-color: rgb(255, 255, 255);
+    }
+
+    html, body{
+        height: auto;
+    }
+
+    .cart-item-img{
+        width: 30vw;
+        height: 30vw;
+        margin: auto 0px;
+    }
+}
