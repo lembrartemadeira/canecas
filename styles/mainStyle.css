@@ -1911,7 +1911,10 @@ th {
 
 
     @media (max-width: 1200px) {
-
+    
+      .centered-container-middle-text{
+        padding: 20vw 1vw;  
+    }
         
     .mobile-menu-container {
         filter: invert(1);
@@ -2721,5 +2724,6 @@ th {
 }
 
 */
+
 
 
